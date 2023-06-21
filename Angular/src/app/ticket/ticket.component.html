@@ -1,0 +1,36 @@
+<div class="box">
+  <form [formGroup]="bioSection" (ngSubmit)="Submit()">
+    <mat-form-field>
+      <mat-label>
+        Skan z biletu (Numer rejestracyjny):
+      </mat-label>
+      <input matInput type="text" formControlName="rejestracja">
+    </mat-form-field><br>
+    <button mat-raised-button type="submit">Zatwierdź</button>
+  </form>
+</div>
+<div class="box" style="border-left: 1px solid gray">
+  <div class="bilet" *ngIf="Rejestracja != ''">
+
+    Numer rejestracyjny: {{Rej}}
+    <br>
+    Data wjazdu: {{Data}}
+    <br>
+    Godzina wjazdu: {{Godzina}}
+    <br>
+    <h1>Cena za parking: {{DoOplaty}} zł</h1>
+    <form [formGroup]="bioSection1" (ngSubmit)="Submit1()">
+      <mat-form-field>
+        <mat-label>
+          Kwota opłacona (dane z terminala):
+        </mat-label>
+        <input matInput type="text" formControlName="oplata" value="{{DoOplaty}}">
+      </mat-form-field><br>
+      <button mat-raised-button type="submit">Opłać</button>
+    </form>
+    <br>
+    <p style="text-align: justify; margin-left: 15px; margin-right: 15px">
+      po opłaceniu biletu masz 15 minut na opuszczenie parkingu. Rampa wyjazdowa otworzy się automatycznie.
+    </p>
+  </div>
+</div>

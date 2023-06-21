@@ -1,0 +1,38 @@
+<h1 mat-dialog-title xmlns="http://www.w3.org/1999/html">Edytuj</h1>
+
+
+  <form [formGroup]="FormEdit" autocomplete="on" novalidate (ngSubmit)="SaveEdit(FormEdit.value)"
+        id="Edit">
+    <mat-form-field appearance="fill">
+      <mat-label>Rejestracja</mat-label>
+      <input matInput type="text" id="registration" formControlName="registration">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>Czas wjazdu</mat-label>
+      <input matInput type="datetime-local" id="entryTime" formControlName="entryTime">
+    </mat-form-field>
+    <br>
+
+    <mat-checkbox id="isPremium" formControlName="isPremium">Premium</mat-checkbox>
+    <br><br>
+    <mat-form-field appearance="fill">
+      <mat-label>Kwota wpłacona</mat-label>
+      <input matInput type="number" id="amount" formControlName="amount">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>Czas wyjazdu</mat-label>
+      <input matInput type="datetime-local" id="exitTime" formControlName="exitTime">
+    </mat-form-field>
+  </form>
+
+
+<div mat-dialog-actions>
+  <button mat-raised-button [disabled]="!FormEdit.valid" type="submit" color="primary" style="margin: 5px"
+          form="Edit">
+    Zapisz
+  </button>
+  <button mat-raised-button type="button" color="accent" (click)="onNoClick()" style="margin: 5px">Anuluj</button>
+</div>
+

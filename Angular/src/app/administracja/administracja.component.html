@@ -1,0 +1,35 @@
+
+  <table class="mat-elevation-z8">
+    <thead>
+    <tr>
+      <th>Rejestracja</th>
+      <th>Czas wjazdu</th>
+      <th>parking premium?</th>
+      <th>Opłacono</th>
+      <th>Do zapłaty</th>
+      <th>Czas Postoju</th>
+      <th>Czas Opłacenia</th>
+      <th>Akcja</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let ticket of Tickets">
+      <td>{{ ticket.registration }}</td>
+      <td>{{ ticket.entryTime }}</td>
+      <td>{{ticket.isPremium}}</td>
+      <td>{{ticket.payed}} zł</td>
+      <td>{{ ticket.toPay }} zł</td>
+      <td>{{ ticket.parkingTime }} h</td>
+      <td>{{ ticket.departureTime }}</td>
+      <td><mat-icon fontIcon="edit" color="primary" (click)="openDialog(ticket.registration.toString())"></mat-icon><mat-icon fontIcon="delete" color="warn" (click)="Usun(ticket.registration.toString())"></mat-icon><mat-icon fontIcon="directions_run" color="accent" (click)="Wypusc(ticket.registration.toString())"></mat-icon></td>
+    </tr>
+    </tbody>
+  </table>
+  <br><br>
+<div style="text-align: center; width: 100%">
+  Legenda:
+  <br>
+  <mat-icon fontIcon="edit" color="primary"></mat-icon> - edytuj
+  <mat-icon fontIcon="delete" color="warn"></mat-icon> - usuń (o ile wypuszczono)
+  <mat-icon fontIcon="directions_run" color="accent"></mat-icon> - wypuść z parkingu (15 min)
+</div>

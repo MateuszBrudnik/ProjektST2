@@ -1,0 +1,11 @@
+<div class="box">
+  <form [formGroup]="bioSection" (ngSubmit)="Submit()">
+    <mat-form-field>
+      <mat-label>
+        Numer rejestracyjny (skan z kamery):
+      </mat-label>
+      <input matInput type="text" formControlName="rejestracja">
+    </mat-form-field><br>
+    <button mat-raised-button type="submit">Zatwierdź</button>
+  </form>
+</div>

@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{0AF765D5-BCB1-4AE2-A997-D3147D631D08}|http">
+  <MonoDevelop.Ide.ItemProperties.ProjektST2 PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/AdminService.cs">
+    <Files>
+      <File FileName="DTO/TicketDTO.cs" />
+      <File FileName="Properties/launchSettings.json" />
+      <File FileName="Services/PaymentService.cs" />
+      <File FileName="appsettings.json" />
+      <File FileName="Program.cs" />
+      <File FileName="Entities/Ticket.cs" />
+      <File FileName="ParkingDBContext.cs" />
+      <File FileName="Services/AdminService.cs" Line="28" Column="42" />
+      <File FileName="Services/IAdminService.cs" />
+      <File FileName="Controllers/AdminController.cs" />
+      <File FileName="Controllers/Gate1Controller.cs" />
+      <File FileName="Services/IGate1Service.cs" />
+      <File FileName="Services/Gate1Service.cs" />
+      <File FileName="Migrations/20230620164527_init.cs" />
+      <File FileName="Migrations/ParkingDBContextModelSnapshot.cs" />
+      <File FileName="Services/IPremiumGateService.cs" />
+      <File FileName="Services/PremiumGateService.cs" />
+      <File FileName="Services/IExitGateService.cs" />
+      <File FileName="Services/ExitGateService.cs" />
+      <File FileName="Services/IPaymentService.cs" />
+      <File FileName="Controllers/PremiumGateController.cs" />
+      <File FileName="Controllers/ExitGateController.cs" />
+      <File FileName="Controllers/PaymentController.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProjektST2" expanded="True">
+            <Node name="NuGet.Config files" expanded="True" />
+            <Node name="ProjektST2" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="DTO" expanded="True" />
+              <Node name="Entities" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
